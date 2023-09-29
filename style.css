@@ -1,0 +1,113 @@
+.margen{
+
+    background-color: chocolate;
+    margin: 15px 25px 15px 25px;
+    padding: 30px 25px 20px 15px;
+    border: solid 2px black;
+}
+#todo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0px;
+}
+.recipientes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 400px;
+}
+.cajas{
+    background-color: #3b5998;
+    color: #fbff00;
+    padding: 40px;
+    grid-gap: 20;
+    border: solid 2px black;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    
+}
+
+.item {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: solid 2px black;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    padding: 20px;
+}
+.grid-container>* {
+    box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template:
+        "header" 200px
+        "navbar" 50px
+        "main" 500px
+        "sidebar"
+        "footer";
+
+    .header {
+        grid-area: header;
+        background-color: rgba(56, 42, 244, 0.74);
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: rgba(221, 186, 10, 0.74);
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: rgba(25, 115, 42, 0.74);
+    }
+
+    .main {
+        grid-area: main;
+        background-color: #f5f5f5;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: rgba(179, 13, 13, 0.74);
+    }
+
+    @media (min-width:768px) {
+        grid-template:
+            "header navbar" 50px
+            "header navbar" 50px
+            "sidebar main" auto
+            "footer footer" 100px/
+            200px auto;
+            
+    }
+    @media (min-width:992px) {
+        grid-template:
+            "header header header" 100px
+            "navbar main sidebar" auto
+            "footer footer footer" 100px/
+            200px auto 200px;
+            
+    }
+}
