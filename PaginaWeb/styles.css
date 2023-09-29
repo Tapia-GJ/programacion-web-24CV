@@ -48,20 +48,20 @@ li {
     overflow: visible;
 }
 
-.nav {
-    background-color: purple;
+.navbar {
+    background-color: orange;
     height: 70px;
     padding: 0 30px;
 }
 
-.nav h1 {
+.navbar h1 {
     font-size: 30px;
     font-weight: 300;
     margin: 10px 0;
     line-height: 1.2;
 }
 
-.nav .flex {
+.navbar .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
