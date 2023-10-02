@@ -130,3 +130,24 @@ li {
     font-size: 15px;
     font-family: "popins", sans-serif;
 }
+.lower-container{
+    margin: 120px auto;
+    padding: 0;
+    max-width: 1400px;
+    text-align: center;
+}
+.title{
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.text{
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 20px;
+    text-align: justify;
+}
