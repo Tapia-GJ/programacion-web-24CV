@@ -165,3 +165,10 @@ li {
     text-align: center;
     width: 800px;
 }
+.stats .fa{
+    color: orange;
+}
+.title-container{
+    color: black;
+    text-align: center;
+}   
